@@ -1,0 +1,161 @@
+<resources>
+    <string name="app_name">Fuel Assistant</string>
+    <string name="title_activity_fabricante_edita">FabricanteEdita</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_modelo_carro_edita">ModeloCarroEdita</string>
+    <string name="Categoria">Categoria</string>
+    <string name="textoCombo">Texto</string>
+    <string name="Nome">Nome</string>
+    <string name="Fabricante">Fabricante:</string>
+    <string name="AnoFabricacao">Ano de Fabricação: </string>
+    <string name="ModeloCarro">Modelo:</string>
+    <string name="title_activity_teste">teste</string>
+    <string name="Usuario">Usuário</string>
+    <string name="Carro">Carro</string>
+    <string name="TipoCombustivel">Tipo de Combustível</string>
+    <string name="Data">Data</string>
+    <string name="MediaAberturaBorboleta">M. Aceler.</string>
+    <string name="Consumo">Consumo</string>
+    <string name="VolumeAbastecido">Volume Abastecido</string>
+    <string name="CarroUtilizado">Veiculo Atual:</string>
+    <string name="TipodeCombustivelDoUltimoAbatecimento">Tipo de Combustível:</string>
+    <string name="Registros">Registros</string>
+    <string name="Relatorios">Relatórios</string>
+    <string name="Configuracoes">Configurações</string>
+    <string name="sobre">Sobre</string>
+    <string name="MeusVeículos">Meus Veículos</string>
+    <string name="BemVindo">Bem Vindo ao FAS !</string>
+    <string name="Conectar">Conectar</string>
+    <string name="Desconectar">Desconectar</string>
+    <string name="Conectado">Conectado!</string>
+    <string name="Conectando">Conectando...</string>
+    <string name="Desconectado">Desconectado</string>
+    <string name="ParaComecar">Para começar, cadatre um veiculo no qual deseja realizar a análise:</string>
+    <string name="Avancar">Avançar</string>
+    <string name="DistanciaPercorrida">Distância Percorrida:</string>
+    <string name="NivelAbastecido">Nv Combustível Atual: </string>
+    <string name="Veiculo">Veículo</string>
+    <string name="Agrupamento">Agrupamento</string>
+    <string name="GerarRelatorio">Gerar Relatório</string>
+    <string name="NvAnterior">Nv. Combustível Inicial: </string>
+    <string name="DesconexaoTitulo">Desconectar Scanner OBD II</string>
+    <string name="DesconexaoParado">Deseja Realmente se Desconectar do Dispositivo OBD II? </string>
+    <string name="DesconexaoMovimento">TODAS as informações desta atual corrida serão perdidas. Deseja realmente Desconectar?</string>
+    <string name="DesconexaoAbastecendo">TODAS as informações do atual abastecimento serão perdidas. Deseja realmente Desconectar? </string>
+    <string name="Sim">Sim</string>
+    <string name="Nao">Não</string>
+    <string name="MeusVeiculos">Meus Veículos</string>
+    <string name="RegistroAtual">Registro Atual</string>
+    <string name="FuelAssistant">Fuel Assistant</string>
+    <string name="vazio" />
+    <string name="action_mark_all_read">Marcar Tudo como Lido</string>
+    <string name="action_clear_all">Limpar Tudo</string>
+    <string name="action_logout">Logout</string>
+    <string name="notificacoes">Notificações</string>
+    <string name="politicasPrivacidade">Políticas de Privacidade</string>
+    <string name="abrirMenu">Abrir Menu</string>
+    <string name="fecharMenu">Fechar Menu</string>
+    <string name="leituraEArmazenamento">Leitura e armazenamento de informações de consumo de combustível por Scanner OBDII Bluetooth</string>
+    <string name="alterarCorridas">Deseja realizar qual operação com esta corrida ?</string>
+    <string name="Excluir">Excluir</string>
+    <string name="Tranferir">Transferir</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="tituloAlterarCorrida">Alterar Corrida</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_home">Principal</string>
+    <string name="nav_photos">Corridas</string>
+    <string name="nav_movies">Registros</string>
+    <string name="nav_notifications">Relatórios</string>
+    <string name="nav_settings">Configurações</string>
+    <string name="nav_about_us">Sobre</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Fuel Assistant</item>
+        <item>Corridas</item>
+        <item>Registros</item>
+        <item>Relatórios</item>
+        <item>Configurações</item>
+        <item>Meus Veículos</item>
+    </string-array>
+
+    <string name="activity_title_about_us">About Us</string>
+    <string name="activity_title_privacy_policy">Privacy Policy</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Distancia">Distância</string>
+    <string name="Inicio">Início</string>
+    <string name="Fim">Fim</string>
+    <string name="InicioeFim">Início / Fim</string>
+
+
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="PrimeiroUso">Primeiro Uso</string>
+    <string name="conectadoSucesso">Conectado com Sucesso!</string>
+    <string name="AbastecimentoCompleto">Abastecimento Completado e o Registro de consumo foi Armazenado com Sucesso!</string>
+    <string name="NaoFoiPossivelConectar">Não foi possível estabelecer a Conexão</string>
+    <string name="ScannerDesativado">Scanner foi Desativado ou está fora do Alcance</string>
+    <string name="MsgErroValvulaAcel">Veiculo sem Suporte para leitura de Valvula de Aceleração</string>
+    <string name="MsgErroLeituraCombustivel">Veiculo sem Suporte para Leitura de Combustível</string>
+    <string name="Ajuda">Ajuda</string>
+    <string name="ultimoRegistro">Último Registro</string>
+    <string name="Cancelar">Cancelar</string>
+    <string name="Concluido">Concluído</string>
+    <string name="AnoInvalido">Ano de Fabricação Inválido</string>
+    <string name="tituloExcluirVeiculo">Excluir Veículo</string>
+    <string name="msgExcluirVeiculo">Deseja realmente excluir este veículo e todos os dados referentes a ele?</string>
+    <string name="VeiculoExcluido">Veículo Excluido com Sucesso!</string>
+    <string name="FiltrarPorVeiculo">Filtrar por Veículo:</string>
+    <string name="Todos">       - Todos -         </string>
+    <string name="VeiculoAlterado">Veículo alterado para </string>
+    <string name="MsgErroDeveHaverPeloMenosUmVeiculo">Deve haver pelo menos um Veículo Cadastrado no Sistema</string>
+    <string name="TCombus">T. Combustível</string>
+    <string name="todosCamposDevemSerPreenchidos">Todos os Campos devem ser Preenchidos</string>
+    <string name="NaoHaRegistrosRestricoes">Não há Registros para estas Restrições</string>
+    <string name="slide_1_title">Leitor OBDII</string>
+    <string name="slide_1_desc">Para o funcionamento desta aplicação, é necessária a utilização de um leitor OBDII ELM-327 Bluetooth</string>
+    <string name="slide_2_title">Conecte o Leitor OBD II</string>
+    <string name="slide_2_desc">A porta de entrada do dispositivo geralmente se localiza abaixo do volante. \n \n No entanto, ele pode ser localizado em outro local, dependendo do modelo do veículo.</string>
+    <string name="slide_3_title">Pareamento ao Dispositivo</string>
+    <string name="slide_3_desc">Faça o pareamento do seu dispositivo Android ao Leitor OBDII. \n \n A senha de pareamento padrão dos leitores é \"1234\".</string>
+    <string name="slide_4_title">Cadastre o seu Veículo</string>
+    <string name="slide_4_desc">Estamos prontos para começar. \n \n O primeiro passo é cadastrar o seu primeiro veículo no sistema</string>
+    <string name="next">Próximo</string>
+    <string name="skip">Pular</string>
+    <string name="start">Começar</string>
+    <string name="slide_0_title">Fuel Assistance</string>
+    <string name="slide_0_desc">Bem Vindo ao Fuel Assistance !</string>
+    <string name="VeiculoCadastradoSucesso">Veículo Cadastrado com Sucesso!</string>
+    <string name="title_activity_troca_combustivel">Tipos de Combustível</string>
+    <string name="title_activity_adiciona_veiculos">Adicionar Novo Veículo</string>
+    <string name="tituloAddNovoCombustivel">Adicionar um novo Tipo de Combustível</string>
+    <string name="mgsAddNovoCombustivel">Insira o nome do novo Combustível</string>
+    <string name="CombustivelAddSucesso">Novo Combustível Adicionado com Sucesso!</string>
+    <string name="CombustivelAddErro">Nome Inválido</string>
+    <string name="CombutisvelAlterado">Combustível alterado para:</string>
+    <string name="semBluetooth">Dispositivo sem receptor Bluetooth</string>
+    <string name="ModoOBDSim">Modo Simulador</string>
+    <string name="Ligado">Ligado</string>
+    <string name="UnidadeDeConsumo">Unidade de Consumo</string>
+    <string name="AposAbastecimento">Após os Abastecimento</string>
+    <string name="AposCorrida">Ao completar as Corridas</string>
+    <string name="Nenhuma">Nenhuma</string>
+    <string name="KmPerPorcentagem">Km/% (Padrão)</string>
+    <string name="AjudaSimulador">Para utilizar algum simualdor OBDII (como OBDSim ou Freematics) é necessário ativar esta opção</string>
+    <string name="Interrogacao">\?</string>
+    <string name="versao">Versão:</string>
+    <string name="FuelAssistantFA">FA: Fuel Assistant</string>
+    <string name="msgLigarCompatibilidade">Este veículo não possui um sensor de nível de combustível digital, portanto o aplicativo poderá funcionar de forma limitada. Deseja continuar?</string>
+    <string name="tituloExcluirRegistro">Excluir Registro</string>
+    <string name="msgExcluirRegistro">Você tem certeza que deseja excluir este registro?</string>
+    <string name="RegistroExcluido">Registro Excluido com Sucesso</string>
+    <string name="TituloSemSuporteNVCombustEMAF">Erro</string>
+    <string name="msgSemSuporteNVCombustEMAF">Este veículo não possui suporte para os sensores necessários para a funcionamento desta aplicação</string>
+    <string name="TentandoReconexao">Tetando reconexão...</string>
+    <string name="VeiculoSemSuporteMAF">Veículo sem suporte para o sensor de MAF</string>
+</resources>

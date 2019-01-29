@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ifmg.rodrigo.fuelassistant">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".activity.AboutUsActivity"
+            android:label="@string/activity_title_about_us" />
+        <activity
+            android:name=".activity.PrivacyPolicyActivity"
+            android:label="@string/activity_title_privacy_policy" />
+
+        <activity
+            android:name=".activity.Splash"
+            android:label="@string/FuelAssistant"
+            android:theme="@style/AppTheme.NoActionBarSplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.AdicionaVeiculos"
+            android:label="@string/title_activity_adiciona_veiculos"
+            />
+        <activity android:name=".activity.RelatorioGrafico" />
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.TrocaCombustivelActivity"
+            android:label="@string/title_activity_troca_combustivel"/>
+
+    </application>
+
+</manifest>

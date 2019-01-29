@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ifmg.rodrigo.fuelassistant.fragment.SettingsFragment">
+
+    <TextView
+        android:id="@+id/tvModoSimulador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp"
+        android:text="@string/ModoOBDSim"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/spSettingsUnidadeConsum"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:id="@+id/cbModoSimulador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:checked="false"
+        android:duplicateParentState="false"
+        android:layout_alignBaseline="@+id/tvModoSimulador"
+        android:layout_alignBottom="@+id/tvModoSimulador"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/notificacoes"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textView13"
+        android:layout_alignStart="@+id/textView13"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/UnidadeDeConsumo"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/cbNotifiCorridas"
+        android:layout_alignLeft="@+id/tvModoSimulador"
+        android:layout_alignStart="@+id/tvModoSimulador" />
+
+    <Spinner
+        android:id="@+id/spSettingsUnidadeConsum"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView13"
+        android:layout_alignLeft="@+id/textView13"
+        android:layout_alignStart="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="@string/AposAbastecimento"
+        android:layout_below="@+id/textView12"
+        android:layout_alignRight="@+id/textView13"
+        android:layout_alignEnd="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/AposCorrida"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/cbNotifiAbastecimento"
+        android:layout_alignLeft="@+id/textView14"
+        android:layout_alignStart="@+id/textView14" />
+
+    <CheckBox
+        android:id="@+id/cbNotifiCorridas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView15"
+        android:layout_alignBottom="@+id/textView15"
+        android:layout_alignLeft="@+id/cbNotifiAbastecimento"
+        android:layout_alignStart="@+id/cbNotifiAbastecimento" />
+
+    <CheckBox
+        android:id="@+id/cbNotifiAbastecimento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView14"
+        android:layout_alignBottom="@+id/textView14"
+        android:layout_alignLeft="@+id/cbModoSimulador"
+        android:layout_alignStart="@+id/cbModoSimulador"
+        android:checked="true" />
+
+    <TextView
+        android:id="@+id/tvHelpSimulador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvModoSimulador"
+        android:layout_marginBottom="13dp"
+        android:layout_toEndOf="@+id/tvModoSimulador"
+        android:layout_toRightOf="@+id/tvModoSimulador"
+        android:text="@string/Interrogacao"
+        android:textColor="@color/bg_screen1"
+        android:textSize="14sp" />
+
+</RelativeLayout>

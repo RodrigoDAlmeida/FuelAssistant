@@ -1,0 +1,185 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ifmg.rodrigo.fuelassistant.fragment.HomeFragment">
+
+    <com.cardiomood.android.controls.gauge.SpeedometerGauge
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:padding="8dp"
+            android:id="@+id/speedometer"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/textView22"
+            android:layout_marginBottom="43dp"
+            android:layout_below="@+id/ivParado" />
+
+    <ImageView
+        android:id="@+id/ivTipoCombustivel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ivVeiculoAtual"
+        android:layout_below="@+id/ivVeiculoAtual"
+        android:onClick="onClickCombustiveis"
+        android:src="@drawable/ic_gas"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvVeiculoAtual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ivVeiculoAtual"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/ivVeiculoAtual"
+        android:clickable="true"
+        android:onClick="onClickMeusVeiculos"
+        android:text="Nenhum"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/tvTipoCombustivel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ivTipoCombustivel"
+        android:layout_marginBottom="14dp"
+        android:layout_toEndOf="@+id/ivTipoCombustivel"
+        android:clickable="true"
+        android:onClick="onClickCombustiveis"
+        android:text="Nenhum"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+
+        <TextView
+            android:text="0 Km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDistanciaPercorrida"
+            android:textStyle="bold"
+            android:textColor="?android:attr/colorActivatedHighlight"
+            android:textAllCaps="false"
+            android:textIsSelectable="false"
+            android:elevation="13dp"
+            android:textSize="30sp"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:layout_centerInParent="false"
+            android:layout_above="@+id/speedometer"
+            android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/ivParado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:elevation="11dp"
+        android:src="@drawable/off"
+        android:visibility="visible"
+        android:layout_alignTop="@+id/tvNvCombustAtual"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <ImageView
+        android:id="@+id/ivVeiculoAtual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="42dp"
+        android:onClick="onClickMeusVeiculos"
+        android:src="@drawable/ic_car"
+        android:visibility="visible" />
+
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:onClick="onClickMeusVeiculos"
+        android:src="@drawable/ic_accelera"
+        android:visibility="visible"
+        android:layout_above="@+id/tvVelocidadePura"
+        android:layout_alignLeft="@+id/ivTipoCombustivel"
+        android:layout_alignStart="@+id/ivTipoCombustivel" />
+
+    <ImageView
+        android:id="@+id/ivNvAtual"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/g50_black"
+        android:visibility="visible"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_above="@+id/tvTipoCombustivel"
+        android:layout_toLeftOf="@+id/tvNvCombustAtual"
+        android:layout_toStartOf="@+id/tvNvCombustAtual" />
+
+    <ImageView
+        android:id="@+id/ivConsumoAnterior"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_consumo"
+        android:visibility="visible"
+        android:layout_below="@+id/ivNvAtual"
+        android:layout_alignLeft="@+id/ivNvAtual"
+        android:layout_alignStart="@+id/ivNvAtual" />
+
+        <TextView
+            android:text="0%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvNvCombustAtual"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_above="@+id/ivTipoCombustivel"
+            android:layout_alignRight="@+id/ivDesconectado"
+            android:layout_alignEnd="@+id/ivDesconectado" />
+
+    <TextView
+        android:id="@+id/tvConsumoAnterior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="23 Km/%"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/ivTipoCombustivel"
+        android:layout_alignLeft="@+id/tvNvCombustAtual"
+        android:layout_alignStart="@+id/tvNvCombustAtual" />
+
+
+    <ImageView
+        android:id="@+id/ivDesconectado"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvVeiculoAtual"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/desconc"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvAceleracao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" -- %"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_alignBottom="@+id/imageView15"
+        android:layout_toRightOf="@+id/imageView15"
+        android:layout_toEndOf="@+id/imageView15" />
+
+    <TextView
+        android:id="@+id/tvVelocidadePura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvDistanciaPercorrida"
+        android:layout_alignBottom="@+id/tvDistanciaPercorrida"
+        android:layout_alignLeft="@+id/imageView15"
+        android:layout_alignStart="@+id/imageView15" />
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_relatorios"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spRelatorioVeiculo"
+        android:layout_below="@+id/textView20"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spRelatorioAgrupamento"
+        android:layout_below="@+id/textView23"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spRelatorioVeiculo"
+        android:layout_marginTop="11dp"
+        android:text="@string/TipoCombustivel"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spRelatorioTipoCombus"
+        android:layout_marginTop="20dp"
+        android:text="@string/Agrupamento"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spRelatorioTipoCombus"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/textView21"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/Veiculo"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvAno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spRelatorioAgrupamento"
+        android:layout_marginTop="11dp"
+        android:text="Ano"
+        android:textColor="@color/colorInactive"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/etRelatorioAno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvAno"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btRelatorioGerarRelatorio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:drawableLeft="?attr/actionBarDivider"
+        android:drawableRight="@android:drawable/ic_media_play"
+        android:elevation="11dp"
+        android:text="@string/GerarRelatorio"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:layout_below="@+id/etRelatorioAno"
+        android:layout_toRightOf="@+id/etRelatorioAno"
+        android:layout_toEndOf="@+id/etRelatorioAno"
+        android:layout_marginTop="10dp" />
+</RelativeLayout>

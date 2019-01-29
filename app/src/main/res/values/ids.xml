@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="MeusVeiculos" type="id">Meus Veículos</item>
+    <item name="todosCamposDevemSerPreenchidos" type="id">Todos os Campos devem ser Preenchidos
+    </item>
+</resources>

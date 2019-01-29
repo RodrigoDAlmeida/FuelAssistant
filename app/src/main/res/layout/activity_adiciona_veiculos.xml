@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:backgroundTint="@color/colorAccent"
+    tools:context="ifmg.rodrigo.fuelassistant.activity.AdicionaVeiculos">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/spAddCarrosFabricante"
+        android:layout_marginTop="42dp"
+        android:text="@string/ModeloCarro"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ilAddCarroAno"
+        android:layout_alignLeft="@+id/etAddCarroAno"
+        android:layout_alignStart="@+id/etAddCarroAno"
+        android:layout_marginBottom="27dp"
+        android:text="@string/AnoFabricacao"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/Fabricante"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:id="@+id/spAddCarrosModelo"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="11dp"
+        android:background="@color/backgroundColor" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/ilAddCarroAno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/etAddCarroAno"
+        android:layout_alignLeft="@+id/etAddCarroAno"
+        android:layout_alignStart="@+id/etAddCarroAno">
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Spinner
+        android:id="@+id/spAddCarrosFabricante"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="14dp"
+        android:background="@color/light_primary"
+        android:backgroundTint="@color/backgroundColor" />
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/buttonbar"
+        style="@android:style/ButtonBar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btAddCarroCancela"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.93"
+            android:drawableLeft="@drawable/ic_close_white_24dp_mini"
+            android:onClick="onClickCancelar"
+            android:text="@string/cancelar"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btAddCarroConfirma"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.94"
+            android:drawableLeft="@drawable/ic_check_white_24dp_mini"
+            android:onClick="onClickConcluir"
+            android:text="@string/Concluido"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <EditText
+
+        android:id="@+id/etAddCarroAno"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spAddCarrosModelo"
+        android:layout_alignStart="@+id/spAddCarrosModelo"
+        android:layout_below="@+id/spAddCarrosModelo"
+        android:layout_marginTop="74dp"
+        android:background="@color/backgroundColor"
+        android:inputType="number"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:textColorHint="@android:color/background_light"
+        android:textColorLink="@android:color/background_light" />
+
+</RelativeLayout>

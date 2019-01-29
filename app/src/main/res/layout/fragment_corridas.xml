@@ -1,0 +1,234 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/lvCorridas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView26"
+        android:layout_marginBottom="55dp"
+        android:layout_marginTop="19dp"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:background="@color/colorAccent"
+        android:id="@+id/relativeLayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp"
+            app:srcCompat="@drawable/ic_white_date" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignLeft="@+id/imageView3"
+            android:layout_alignStart="@+id/imageView3"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_white_gas" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_above="@+id/imageView2"
+            android:layout_alignLeft="@+id/imageView2"
+            android:layout_alignStart="@+id/imageView2"
+            app:srcCompat="@drawable/ic_white_car" />
+
+        <TextView
+            android:id="@+id/tvCorridaTipoCombus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Combustivel"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/background_light"
+            android:textSize="12sp"
+            android:textStyle="normal|bold"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView2"
+            android:layout_toEndOf="@+id/imageView2" />
+
+        <TextView
+            android:id="@+id/tvListagemRegistroCarro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView3"
+            android:layout_alignLeft="@+id/tvCorridaTipoCombus"
+            android:layout_alignStart="@+id/tvCorridaTipoCombus"
+            android:layout_marginBottom="8dp"
+            android:text="12/12/12"
+            android:textColor="@android:color/background_light"
+            android:textSize="12sp"
+            android:textStyle="normal|bold"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_above="@+id/imageView4"
+            android:layout_marginEnd="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_toLeftOf="@+id/tvCorridaNvComb"
+            android:layout_toStartOf="@+id/tvCorridaNvComb"
+            app:srcCompat="@drawable/g50_white" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignLeft="@+id/imageView5"
+            android:layout_alignStart="@+id/imageView5"
+            android:layout_below="@+id/imageView"
+            app:srcCompat="@drawable/ic_white_distance" />
+
+        <TextView
+            android:id="@+id/tvCorridaNvComb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageView4"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="70dp"
+            android:layout_marginRight="76dp"
+            android:text="50 %"
+            android:textColor="@android:color/background_light"
+            android:textSize="12sp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/tvCorridaDistancia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="300 km"
+            android:textColor="@android:color/background_light"
+            android:textSize="12sp"
+            android:textStyle="normal|bold"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView5"
+            android:layout_toEndOf="@+id/imageView5" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignLeft="@+id/imageView4"
+            android:layout_alignStart="@+id/imageView4"
+            android:layout_below="@+id/imageView4"
+            app:srcCompat="@drawable/ic_white_accelera" />
+
+        <TextView
+            android:id="@+id/tvCorridaCarro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageView2"
+            android:layout_alignLeft="@+id/tvCorridaTipoCombus"
+            android:layout_alignStart="@+id/tvCorridaTipoCombus"
+            android:layout_marginBottom="5dp"
+            android:text="@string/Carro"
+            android:textColor="@android:color/background_light"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCorridaMedAcele"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="23,54 %"
+            android:textColor="@android:color/background_light"
+            android:textSize="12sp"
+            android:textStyle="normal|bold"
+            android:layout_alignBaseline="@+id/tvListagemRegistroCarro"
+            android:layout_alignBottom="@+id/tvListagemRegistroCarro"
+            android:layout_toRightOf="@+id/imageView5"
+            android:layout_toEndOf="@+id/imageView5" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/MediaAberturaBorboleta"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/textView26"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:text="@string/InicioeFim"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_toLeftOf="@+id/textView26"
+        android:layout_toStartOf="@+id/textView26" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_toLeftOf="@+id/textView18"
+        android:layout_toStartOf="@+id/textView18"
+        android:text="@string/Distancia"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Data"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_toLeftOf="@+id/textView17"
+        android:layout_toStartOf="@+id/textView17"
+        android:layout_marginRight="37dp"
+        android:layout_marginEnd="37dp" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView17"
+        android:layout_marginTop="-5dp"
+        app:srcCompat="@drawable/divisoria_dark" />
+</RelativeLayout>

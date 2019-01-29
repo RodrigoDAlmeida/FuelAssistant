@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tvListagemRegistroCarro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_column="1"
+        android:layout_row="1"
+        android:text="Palio"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="12/12/2012"
+        android:id="@+id/tvListagemRegistrosData"
+        android:layout_row="1"
+        android:layout_column="4"
+        android:textSize="12sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tvListagemRegistrosConsumo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_column="2"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_row="1"
+        android:layout_toLeftOf="@+id/tvListagemRegistrosData"
+        android:layout_toStartOf="@+id/tvListagemRegistrosData"
+        android:text="80,40 Km/%"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvListagemRegistrosMedAcel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="3"
+        android:layout_row="1"
+        android:text="17,90 %"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="12sp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tvListagemRegistrosData"
+        android:layout_toEndOf="@+id/tvListagemRegistrosData" />
+
+    <TextView
+        android:id="@+id/tvListagemRegistrosTCombustivel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:text="Gasolina"
+        android:textSize="12sp" />
+
+</RelativeLayout>
